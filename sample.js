@@ -88,7 +88,7 @@ function deviceorientationHandler(event) {
   }
 
   // 重力の設定
-  world.setGravity(new b2Vec2(x,y));
+  world.SetGravity(new b2Vec2(x,y));
 }
 
 
