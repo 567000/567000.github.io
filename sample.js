@@ -72,7 +72,7 @@ function init() {
   handleTick();
 
   // スマホの傾きに応じて重量の変更
-  window.addEventListener("deviceorientation", deviceorientationHandler);
+  window.addEventListener("deviceorientation", deviceorientationHandler, true);
 }
 
 /** 傾き変更で重量の向きの変更 */
@@ -85,7 +85,7 @@ function deviceorientationHandler(event) {
     x = 10 * Math.cos( rad );
     y = 10 * Math.sin( rad );
   }
-  alert(event.alpha);
+  console.log(event.alpha);
   console.log(x);
   console.log(y);
 
