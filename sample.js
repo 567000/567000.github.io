@@ -84,7 +84,6 @@ function deviceorientationHandler(event) {
     var rad = (event.alpha)/180 * Math.PI;
     x = 10 * Math.cos( rad );
     y = 10 * Math.sin( rad );
-    alert(x);
   }
 
   // 重力の設定
