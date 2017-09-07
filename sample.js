@@ -85,7 +85,6 @@ function deviceorientationHandler(event) {
     x = 10 * Math.cos( rad );
     y = 10 * Math.sin( rad );
   }
-  alert(event.alpha + " " + x + " " + y);
   console.log(event.alpha);
   console.log(x);
   console.log(y);
