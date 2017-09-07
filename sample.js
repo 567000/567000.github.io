@@ -77,7 +77,6 @@ function init() {
 
 /** 傾き変更で重量の向きの変更 */
 function deviceorientationHandler(event) {
-  alert("1");
   // 
   var x = 0;
   var y = 10;
@@ -86,6 +85,7 @@ function deviceorientationHandler(event) {
     x = 10 * Math.cos( rad );
     y = 10 * Math.sin( rad );
   }
+  alert(event.alpha + " " + x + " " + y);
   console.log(event.alpha);
   console.log(x);
   console.log(y);
