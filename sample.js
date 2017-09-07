@@ -69,9 +69,7 @@ function init() {
   createPixiWorld();
 
   // スマホの傾きに応じて重量の変更
-  alert("1");
   window.addEventListener("deviceorientation", deviceorientationHandler, true);
-  alert("2");
 
   // 定期的に呼び出す関数(エンターフレーム)を設定
   handleTick();
@@ -79,6 +77,7 @@ function init() {
 
 /** 傾き変更で重量の向きの変更 */
 function deviceorientationHandler(event) {
+  alert("1");
   // 
   var x = 0;
   var y = 10;
