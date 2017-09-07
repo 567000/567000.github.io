@@ -75,7 +75,9 @@ function init() {
   handleTick();
 }
 
-/** 傾き変更で重量の向きの変更 */
+/** 傾き変更で重量の向き  console.log(event.alpha);
+  console.log(x);
+  console.log(y);の変更 */
 function deviceorientationHandler(event) {
   // 
   var x = 0;
@@ -85,9 +87,6 @@ function deviceorientationHandler(event) {
     x = 10 * Math.cos( rad );
     y = 10 * Math.sin( rad );
   }
-  console.log(event.alpha);
-  console.log(x);
-  console.log(y);
 
   // 重力の設定
   world.setGravity(new b2Vec2(x,y));
