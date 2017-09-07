@@ -68,13 +68,11 @@ function init() {
   // Pixiのコンテンツを作成
   createPixiWorld();
 
+  // スマホの傾きに応じて重量の変更
+  window.addEventListener("deviceorientation", deviceorientationHandler, true);
+
   // 定期的に呼び出す関数(エンターフレーム)を設定
   handleTick();
-
-  // スマホの傾きに応じて重量の変更
-  alert("1");
-  window.addEventListener("deviceorientation", deviceorientationHandler, true);
-  alert("2");
 }
 
 /** 傾き変更で重量の向きの変更 */
