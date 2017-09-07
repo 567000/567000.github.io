@@ -81,7 +81,7 @@ function deviceorientationHandler(event) {
   var x = 0;
   var y = 10;
   if (event.alpha!=null) {
-    var rad = (event.alpha+90)/180 * Math.PI;
+    var rad = (event.alpha)/180 * Math.PI;
     x = 10 * Math.cos( rad );
     y = 10 * Math.sin( rad );
     alert(x);
